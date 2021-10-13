@@ -1,0 +1,203 @@
+90e7ed8f31bcba238c24e0cfcd3e3f20
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _color = _interopRequireDefault(require("color"));
+
+var React = _interopRequireWildcard(require("react"));
+
+var _reactNative = require("react-native");
+
+var _Text = _interopRequireDefault(require("./Text"));
+
+var _theming = require("../../core/theming");
+
+function _getRequireWildcardCache() {
+  if (typeof WeakMap !== "function") return null;
+  var cache = new WeakMap();
+
+  _getRequireWildcardCache = function _getRequireWildcardCache() {
+    return cache;
+  };
+
+  return cache;
+}
+
+function _interopRequireWildcard(obj) {
+  if (obj && obj.__esModule) {
+    return obj;
+  }
+
+  if (obj === null || typeof obj !== "object" && typeof obj !== "function") {
+    return {
+      default: obj
+    };
+  }
+
+  var cache = _getRequireWildcardCache();
+
+  if (cache && cache.has(obj)) {
+    return cache.get(obj);
+  }
+
+  var newObj = {};
+  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+
+  for (var key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+
+      if (desc && (desc.get || desc.set)) {
+        Object.defineProperty(newObj, key, desc);
+      } else {
+        newObj[key] = obj[key];
+      }
+    }
+  }
+
+  newObj.default = obj;
+
+  if (cache) {
+    cache.set(obj, newObj);
+  }
+
+  return newObj;
+}
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    default: obj
+  };
+}
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+function ownKeys(object, enumerableOnly) {
+  var keys = Object.keys(object);
+
+  if (Object.getOwnPropertySymbols) {
+    var symbols = Object.getOwnPropertySymbols(object);
+    if (enumerableOnly) symbols = symbols.filter(function (sym) {
+      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+    });
+    keys.push.apply(keys, symbols);
+  }
+
+  return keys;
+}
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    if (i % 2) {
+      ownKeys(Object(source), true).forEach(function (key) {
+        _defineProperty(target, key, source[key]);
+      });
+    } else if (Object.getOwnPropertyDescriptors) {
+      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+      ownKeys(Object(source)).forEach(function (key) {
+        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+      });
+    }
+  }
+
+  return target;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+var StyledText = function StyledText(_ref) {
+  var theme = _ref.theme,
+      alpha = _ref.alpha,
+      family = _ref.family,
+      style = _ref.style,
+      rest = _objectWithoutProperties(_ref, ["theme", "alpha", "family", "style"]);
+
+  var textColor = (0, _color.default)(theme.colors.text).alpha(alpha).rgb().string();
+  var font = theme.fonts[family];
+  var writingDirection = _reactNative.I18nManager.isRTL ? 'rtl' : 'ltr';
+  return React.createElement(_Text.default, _extends({}, rest, {
+    style: [_objectSpread(_objectSpread({
+      color: textColor
+    }, font), {}, {
+      textAlign: 'left',
+      writingDirection: writingDirection
+    }), style]
+  }));
+};
+
+var _default = (0, _theming.withTheme)(StyledText);
+
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlN0eWxlZFRleHQudHN4Il0sIm5hbWVzIjpbIlN0eWxlZFRleHQiLCJzdHlsZSIsInJlc3QiLCJ0ZXh0Q29sb3IiLCJ0aGVtZSIsImZvbnQiLCJ3cml0aW5nRGlyZWN0aW9uIiwiSTE4bk1hbmFnZXIiLCJjb2xvciIsInRleHRBbGlnbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUFBLElBQUEsTUFBQSxHQUFBLHNCQUFBLENBQUEsT0FBQSxDQUFBLE9BQUEsQ0FBQSxDQUFBOztBQUNBLElBQUEsS0FBQSxHQUFBLHVCQUFBLENBQUEsT0FBQSxDQUFBLE9BQUEsQ0FBQSxDQUFBOztBQUNBLElBQUEsWUFBQSxHQUFBLE9BQUEsQ0FBQSxjQUFBLENBQUE7O0FBRUEsSUFBQSxLQUFBLEdBQUEsc0JBQUEsQ0FBQSxPQUFBLENBQUEsUUFBQSxDQUFBLENBQUE7O0FBQ0EsSUFBQSxRQUFBLEdBQUEsT0FBQSxDQUFBLG9CQUFBLENBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFTQSxJQUFNQSxVQUFVLEdBQUcsU0FBYkEsVUFBYSxDQUFBLElBQUEsRUFBcUQ7QUFBQSxNQUFwRCxLQUFvRCxHQUFBLElBQUEsQ0FBcEQsS0FBb0Q7QUFBQSxNQUFwRCxLQUFvRCxHQUFBLElBQUEsQ0FBcEQsS0FBb0Q7QUFBQSxNQUFwRCxNQUFvRCxHQUFBLElBQUEsQ0FBcEQsTUFBb0Q7QUFBQSxNQUE1QkMsS0FBNEIsR0FBQSxJQUFBLENBQTVCQSxLQUE0QjtBQUFBLE1BQWxCQyxJQUFrQixHQUFBLHdCQUFBLENBQUEsSUFBQSxFQUFBLENBQUEsT0FBQSxFQUFBLE9BQUEsRUFBQSxRQUFBLEVBQUEsT0FBQSxDQUFBLENBQUE7O0FBQ3RFLE1BQU1DLFNBQVMsR0FBRyxDQUFBLEdBQUEsTUFBQSxDQUFBLE9BQUEsRUFBTUMsS0FBSyxDQUFMQSxNQUFBQSxDQUFOLElBQUEsRUFBQSxLQUFBLENBQUEsS0FBQSxFQUFBLEdBQUEsR0FBbEIsTUFBa0IsRUFBbEI7QUFDQSxNQUFNQyxJQUFJLEdBQUdELEtBQUssQ0FBTEEsS0FBQUEsQ0FBYixNQUFhQSxDQUFiO0FBQ0EsTUFBTUUsZ0JBQWdCLEdBQUdDLFlBQUFBLENBQUFBLFdBQUFBLENBQUFBLEtBQUFBLEdBQUFBLEtBQUFBLEdBQXpCLEtBQUE7QUFFQSxTQUNFLEtBQUEsQ0FBQSxhQUFBLENBQUMsS0FBQSxDQUFELE9BQUEsRUFBQSxRQUFBLENBQUEsRUFBQSxFQUFBLElBQUEsRUFBQTtBQUVFLElBQUEsS0FBSyxFQUFFLENBQUEsYUFBQSxDQUFBLGFBQUEsQ0FBQTtBQUNIQyxNQUFBQSxLQUFLLEVBQUVMO0FBREosS0FBQSxFQUFBLElBQUEsQ0FBQSxFQUFBLEVBQUEsRUFBQTtBQUN3Qk0sTUFBQUEsU0FBUyxFQURqQyxNQUFBO0FBQzJDSCxNQUFBQSxnQkFBQUEsRUFBQUE7QUFEM0MsS0FBQSxDQUFBLEVBQUEsS0FBQTtBQUZULEdBQUEsQ0FBQSxDQURGO0FBTEYsQ0FBQTs7ZUFnQmUsQ0FBQSxHQUFBLFFBQUEsQ0FBQSxTQUFBLEVBQUEsVUFBQSxDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGNvbG9yIGZyb20gJ2NvbG9yJztcbmltcG9ydCAqIGFzIFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IEkxOG5NYW5hZ2VyLCBTdHlsZVByb3AsIFRleHRTdHlsZSB9IGZyb20gJ3JlYWN0LW5hdGl2ZSc7XG5cbmltcG9ydCBUZXh0IGZyb20gJy4vVGV4dCc7XG5pbXBvcnQgeyB3aXRoVGhlbWUgfSBmcm9tICcuLi8uLi9jb3JlL3RoZW1pbmcnO1xuXG50eXBlIFByb3BzID0gUmVhY3QuQ29tcG9uZW50UHJvcHM8dHlwZW9mIFRleHQ+ICYge1xuICBhbHBoYTogbnVtYmVyO1xuICBmYW1pbHk6ICdyZWd1bGFyJyB8ICdtZWRpdW0nIHwgJ2xpZ2h0JyB8ICd0aGluJztcbiAgc3R5bGU/OiBTdHlsZVByb3A8VGV4dFN0eWxlPjtcbiAgdGhlbWU6IFJlYWN0TmF0aXZlUGFwZXIuVGhlbWU7XG59O1xuXG5jb25zdCBTdHlsZWRUZXh0ID0gKHsgdGhlbWUsIGFscGhhLCBmYW1pbHksIHN0eWxlLCAuLi5yZXN0IH06IFByb3BzKSA9PiB7XG4gIGNvbnN0IHRleHRDb2xvciA9IGNvbG9yKHRoZW1lLmNvbG9ycy50ZXh0KS5hbHBoYShhbHBoYSkucmdiKCkuc3RyaW5nKCk7XG4gIGNvbnN0IGZvbnQgPSB0aGVtZS5mb250c1tmYW1pbHldO1xuICBjb25zdCB3cml0aW5nRGlyZWN0aW9uID0gSTE4bk1hbmFnZXIuaXNSVEwgPyAncnRsJyA6ICdsdHInO1xuXG4gIHJldHVybiAoXG4gICAgPFRleHRcbiAgICAgIHsuLi5yZXN0fVxuICAgICAgc3R5bGU9e1tcbiAgICAgICAgeyBjb2xvcjogdGV4dENvbG9yLCAuLi5mb250LCB0ZXh0QWxpZ246ICdsZWZ0Jywgd3JpdGluZ0RpcmVjdGlvbiB9LFxuICAgICAgICBzdHlsZSxcbiAgICAgIF19XG4gICAgLz5cbiAgKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IHdpdGhUaGVtZShTdHlsZWRUZXh0KTtcbiJdfQ==

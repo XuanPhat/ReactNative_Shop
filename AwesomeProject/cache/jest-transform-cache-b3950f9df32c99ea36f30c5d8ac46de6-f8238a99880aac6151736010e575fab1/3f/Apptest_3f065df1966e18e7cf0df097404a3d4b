@@ -1,0 +1,15 @@
+e49f4db5c3cfc331054971fff204e3a5
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactTestRenderer = _interopRequireDefault(require("react-test-renderer"));
+
+var _AppNavigator = _interopRequireDefault(require("../src/Components/ShopApp/screens/AppNavigator"));
+
+test('renders correctly', function () {
+  var tree = _reactTestRenderer.default.create(_react.default.createElement(_AppNavigator.default, null)).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFwcC10ZXN0LmpzIl0sIm5hbWVzIjpbInRlc3QiLCJ0cmVlIiwicmVuZGVyZXIiLCJjcmVhdGUiLCJ0b0pTT04iLCJleHBlY3QiLCJ0b01hdGNoU25hcHNob3QiXSwibWFwcGluZ3MiOiI7O0FBQUE7O0FBQ0E7O0FBQ0E7O0FBQ0FBLElBQUksQ0FBQyxtQkFBRCxFQUFzQixZQUFNO0FBQzlCLE1BQU1DLElBQUksR0FBR0MsMkJBQVNDLE1BQVQsQ0FBZ0IsNkJBQUMscUJBQUQsT0FBaEIsRUFBNEJDLE1BQTVCLEVBQWI7O0FBQ0FDLEVBQUFBLE1BQU0sQ0FBQ0osSUFBRCxDQUFOLENBQWFLLGVBQWI7QUFDRCxDQUhHLENBQUoiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xyXG5pbXBvcnQgcmVuZGVyZXIgZnJvbSAncmVhY3QtdGVzdC1yZW5kZXJlcic7XHJcbmltcG9ydCBTaWduSW4gZnJvbSAnLi4vc3JjL0NvbXBvbmVudHMvU2hvcEFwcC9zY3JlZW5zL0FwcE5hdmlnYXRvcic7XHJcbnRlc3QoJ3JlbmRlcnMgY29ycmVjdGx5JywgKCkgPT4ge1xyXG4gIGNvbnN0IHRyZWUgPSByZW5kZXJlci5jcmVhdGUoPFNpZ25JbiAvPikudG9KU09OKCk7XHJcbiAgZXhwZWN0KHRyZWUpLnRvTWF0Y2hTbmFwc2hvdCgpO1xyXG59KTtcclxuIl19

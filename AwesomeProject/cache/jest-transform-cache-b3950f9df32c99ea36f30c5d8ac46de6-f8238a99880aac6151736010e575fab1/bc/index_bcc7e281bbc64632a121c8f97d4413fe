@@ -1,0 +1,48 @@
+9865907ba3bf62de0c9eb406c949a955
+var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
+
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "registerAnimation", {
+  enumerable: true,
+  get: function get() {
+    return _registry.registerAnimation;
+  }
+});
+Object.defineProperty(exports, "initializeRegistryWithDefinitions", {
+  enumerable: true,
+  get: function get() {
+    return _registry.initializeRegistryWithDefinitions;
+  }
+});
+Object.defineProperty(exports, "createAnimation", {
+  enumerable: true,
+  get: function get() {
+    return _createAnimation.default;
+  }
+});
+exports.Image = exports.Text = exports.View = exports.createAnimatableComponent = void 0;
+
+var _reactNative = require("react-native");
+
+var _createAnimatableComponent = _interopRequireDefault(require("./createAnimatableComponent"));
+
+var _registry = require("./registry");
+
+var ANIMATION_DEFINITIONS = _interopRequireWildcard(require("./definitions"));
+
+var _createAnimation = _interopRequireDefault(require("./createAnimation"));
+
+(0, _registry.initializeRegistryWithDefinitions)(ANIMATION_DEFINITIONS);
+var createAnimatableComponent = _createAnimatableComponent.default;
+exports.createAnimatableComponent = createAnimatableComponent;
+var View = (0, _createAnimatableComponent.default)(_reactNative.View);
+exports.View = View;
+var Text = (0, _createAnimatableComponent.default)(_reactNative.Text);
+exports.Text = Text;
+var Image = (0, _createAnimatableComponent.default)(_reactNative.Image);
+exports.Image = Image;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbIkFOSU1BVElPTl9ERUZJTklUSU9OUyIsImNyZWF0ZUFuaW1hdGFibGVDb21wb25lbnQiLCJjcmVhdGVDb21wb25lbnQiLCJWaWV3IiwiQ29yZVZpZXciLCJUZXh0IiwiQ29yZVRleHQiLCJJbWFnZSIsIkNvcmVJbWFnZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUE7O0FBS0E7O0FBQ0E7O0FBQ0E7O0FBUUE7O0FBTkEsaURBQWtDQSxxQkFBbEM7QUFFTyxJQUFNQyx5QkFBeUIsR0FBR0Msa0NBQWxDOztBQUNBLElBQU1DLElBQUksR0FBRyx3Q0FBZ0JDLGlCQUFoQixDQUFiOztBQUNBLElBQU1DLElBQUksR0FBRyx3Q0FBZ0JDLGlCQUFoQixDQUFiOztBQUNBLElBQU1DLEtBQUssR0FBRyx3Q0FBZ0JDLGtCQUFoQixDQUFkIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtcbiAgVmlldyBhcyBDb3JlVmlldyxcbiAgVGV4dCBhcyBDb3JlVGV4dCxcbiAgSW1hZ2UgYXMgQ29yZUltYWdlLFxufSBmcm9tICdyZWFjdC1uYXRpdmUnO1xuaW1wb3J0IGNyZWF0ZUNvbXBvbmVudCBmcm9tICcuL2NyZWF0ZUFuaW1hdGFibGVDb21wb25lbnQnO1xuaW1wb3J0IHsgaW5pdGlhbGl6ZVJlZ2lzdHJ5V2l0aERlZmluaXRpb25zIH0gZnJvbSAnLi9yZWdpc3RyeSc7XG5pbXBvcnQgKiBhcyBBTklNQVRJT05fREVGSU5JVElPTlMgZnJvbSAnLi9kZWZpbml0aW9ucyc7XG5cbmluaXRpYWxpemVSZWdpc3RyeVdpdGhEZWZpbml0aW9ucyhBTklNQVRJT05fREVGSU5JVElPTlMpO1xuXG5leHBvcnQgY29uc3QgY3JlYXRlQW5pbWF0YWJsZUNvbXBvbmVudCA9IGNyZWF0ZUNvbXBvbmVudDtcbmV4cG9ydCBjb25zdCBWaWV3ID0gY3JlYXRlQ29tcG9uZW50KENvcmVWaWV3KTtcbmV4cG9ydCBjb25zdCBUZXh0ID0gY3JlYXRlQ29tcG9uZW50KENvcmVUZXh0KTtcbmV4cG9ydCBjb25zdCBJbWFnZSA9IGNyZWF0ZUNvbXBvbmVudChDb3JlSW1hZ2UpO1xuZXhwb3J0IHsgZGVmYXVsdCBhcyBjcmVhdGVBbmltYXRpb24gfSBmcm9tICcuL2NyZWF0ZUFuaW1hdGlvbic7XG5leHBvcnQge1xuICByZWdpc3RlckFuaW1hdGlvbixcbiAgaW5pdGlhbGl6ZVJlZ2lzdHJ5V2l0aERlZmluaXRpb25zLFxufSBmcm9tICcuL3JlZ2lzdHJ5JztcbiJdfQ==

@@ -1,0 +1,26 @@
+fee5e917202970812f710b445ebe12b6
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getImageSourceSync = exports.getImageSource = exports.TabBarItemIOS = exports.TabBarItem = exports.Button = exports.default = void 0;
+
+var _createIconSet = _interopRequireDefault(require("./lib/create-icon-set"));
+
+var _MaterialCommunityIcons = _interopRequireDefault(require("./glyphmaps/MaterialCommunityIcons.json"));
+
+var iconSet = (0, _createIconSet.default)(_MaterialCommunityIcons.default, 'Material Design Icons', 'MaterialCommunityIcons.ttf');
+var _default = iconSet;
+exports.default = _default;
+var Button = iconSet.Button,
+    TabBarItem = iconSet.TabBarItem,
+    TabBarItemIOS = iconSet.TabBarItemIOS,
+    getImageSource = iconSet.getImageSource,
+    getImageSourceSync = iconSet.getImageSourceSync;
+exports.getImageSourceSync = getImageSourceSync;
+exports.getImageSource = getImageSource;
+exports.TabBarItemIOS = TabBarItemIOS;
+exports.TabBarItem = TabBarItem;
+exports.Button = Button;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIk1hdGVyaWFsQ29tbXVuaXR5SWNvbnMuanMiXSwibmFtZXMiOlsiaWNvblNldCIsImdseXBoTWFwIiwiQnV0dG9uIiwiVGFiQmFySXRlbSIsIlRhYkJhckl0ZW1JT1MiLCJnZXRJbWFnZVNvdXJjZSIsImdldEltYWdlU291cmNlU3luYyJdLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUtBOztBQUNBOztBQUVBLElBQU1BLE9BQU8sR0FBRyw0QkFBY0MsK0JBQWQsRUFBd0IsdUJBQXhCLEVBQWlELDRCQUFqRCxDQUFoQjtlQUVlRCxPOztJQUViRSxNLEdBS0VGLE8sQ0FMRkUsTTtJQUNBQyxVLEdBSUVILE8sQ0FKRkcsVTtJQUNBQyxhLEdBR0VKLE8sQ0FIRkksYTtJQUNBQyxjLEdBRUVMLE8sQ0FGRkssYztJQUNBQyxrQixHQUNFTixPLENBREZNLGtCIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBNYXRlcmlhbENvbW11bml0eUljb25zIGljb24gc2V0IGNvbXBvbmVudC5cbiAqIFVzYWdlOiA8TWF0ZXJpYWxDb21tdW5pdHlJY29ucyBuYW1lPVwiaWNvbi1uYW1lXCIgc2l6ZT17MjB9IGNvbG9yPVwiIzRGOEVGN1wiIC8+XG4gKi9cblxuaW1wb3J0IGNyZWF0ZUljb25TZXQgZnJvbSAnLi9saWIvY3JlYXRlLWljb24tc2V0JztcbmltcG9ydCBnbHlwaE1hcCBmcm9tICcuL2dseXBobWFwcy9NYXRlcmlhbENvbW11bml0eUljb25zLmpzb24nO1xuXG5jb25zdCBpY29uU2V0ID0gY3JlYXRlSWNvblNldChnbHlwaE1hcCwgJ01hdGVyaWFsIERlc2lnbiBJY29ucycsICdNYXRlcmlhbENvbW11bml0eUljb25zLnR0ZicpO1xuXG5leHBvcnQgZGVmYXVsdCBpY29uU2V0O1xuZXhwb3J0IGNvbnN0IHtcbiAgQnV0dG9uLFxuICBUYWJCYXJJdGVtLFxuICBUYWJCYXJJdGVtSU9TLFxuICBnZXRJbWFnZVNvdXJjZSxcbiAgZ2V0SW1hZ2VTb3VyY2VTeW5jLFxufSA9IGljb25TZXQ7XG4iXX0=

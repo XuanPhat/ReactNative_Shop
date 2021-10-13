@@ -1,0 +1,1 @@
+{"version":3,"sources":["constants.tsx"],"names":["APPROX_STATUSBAR_HEIGHT"],"mappings":";;;;;;AAAO,IAAMA,uBAAuB,GAA7B,CAAA","sourcesContent":["export const APPROX_STATUSBAR_HEIGHT = 0;\n"]}

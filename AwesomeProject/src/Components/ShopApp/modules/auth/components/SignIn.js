@@ -195,7 +195,7 @@ const SignIn = () => {
                       </Text>
                       <View height={4} />
                       <Text style={{color: 'white', fontWeight: '700'}}>
-                        Buy everything with you need....
+                        Buy everything with you need...
                       </Text>
                       <Text
                         style={{

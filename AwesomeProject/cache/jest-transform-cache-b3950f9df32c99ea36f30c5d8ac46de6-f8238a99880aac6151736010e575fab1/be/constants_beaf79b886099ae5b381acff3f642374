@@ -1,0 +1,10 @@
+86b49f27058ecd3090e07cedc9dc9638
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.APPROX_STATUSBAR_HEIGHT = void 0;
+var APPROX_STATUSBAR_HEIGHT = 0;
+exports.APPROX_STATUSBAR_HEIGHT = APPROX_STATUSBAR_HEIGHT;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnN0YW50cy50c3giXSwibmFtZXMiOlsiQVBQUk9YX1NUQVRVU0JBUl9IRUlHSFQiXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFPLElBQU1BLHVCQUF1QixHQUE3QixDQUFBIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGNvbnN0IEFQUFJPWF9TVEFUVVNCQVJfSEVJR0hUID0gMDtcbiJdfQ==

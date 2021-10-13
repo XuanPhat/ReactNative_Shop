@@ -1,0 +1,1 @@
+{"version":3,"sources":["theme.js"],"names":["colors"],"mappings":";;;;;;;AAAA;;eACe;AACXA,EAAAA,MAAM,EAANA;AADW,C","sourcesContent":["import colors from './colors';\nexport default {\n    colors,\n};\n"]}

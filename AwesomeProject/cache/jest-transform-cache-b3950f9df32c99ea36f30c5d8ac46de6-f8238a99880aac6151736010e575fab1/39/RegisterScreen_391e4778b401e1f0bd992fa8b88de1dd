@@ -1,0 +1,22 @@
+46a0fea2e29b954869a679da81d9faf2
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactNative = require("react-native");
+
+var _Register = _interopRequireDefault(require("../../modules/auth/components/Register"));
+
+var RegisterScreen = function RegisterScreen(_ref) {
+  var navigation = _ref.navigation;
+  return _react.default.createElement(_Register.default, null);
+};
+
+var _default = RegisterScreen;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlJlZ2lzdGVyU2NyZWVuLmpzIl0sIm5hbWVzIjpbIlJlZ2lzdGVyU2NyZWVuIiwibmF2aWdhdGlvbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUFBOztBQUNBOztBQUVBOztBQUVBLElBQU1BLGNBQWMsR0FBRyxTQUFqQkEsY0FBaUIsT0FBa0I7QUFBQSxNQUFoQkMsVUFBZ0IsUUFBaEJBLFVBQWdCO0FBQ3ZDLFNBQU8sNkJBQUMsaUJBQUQsT0FBUDtBQUNELENBRkQ7O2VBSWVELGMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xyXG5pbXBvcnQge1ZpZXcsIFRleHQsIEJ1dHRvbn0gZnJvbSAncmVhY3QtbmF0aXZlJztcclxuXHJcbmltcG9ydCBSZWdpc3RlciBmcm9tICcuLi8uLi9tb2R1bGVzL2F1dGgvY29tcG9uZW50cy9SZWdpc3Rlcic7XHJcblxyXG5jb25zdCBSZWdpc3RlclNjcmVlbiA9ICh7bmF2aWdhdGlvbn0pID0+IHtcclxuICByZXR1cm4gPFJlZ2lzdGVyIC8+O1xyXG59O1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgUmVnaXN0ZXJTY3JlZW47XHJcbiJdfQ==

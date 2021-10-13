@@ -1,0 +1,47 @@
+c327524fb2c7a93771fb04c254d6e618
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = index;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactNative = require("react-native");
+
+var _SignInScreen = _interopRequireDefault(require("./SignInScreen"));
+
+var _RegisterScreen = _interopRequireDefault(require("./RegisterScreen"));
+
+var _ForgotPasswordScreen = _interopRequireDefault(require("./ForgotPasswordScreen"));
+
+var _stack = require("@react-navigation/stack");
+
+var Stack = (0, _stack.createStackNavigator)();
+
+function index() {
+  return _react.default.createElement(Stack.Navigator, null, _react.default.createElement(Stack.Screen, {
+    name: "SignInScreen",
+    component: _SignInScreen.default,
+    options: {
+      title: 'Đăng nhập',
+      headerShown: false
+    }
+  }), _react.default.createElement(Stack.Screen, {
+    name: "RegisterScreen",
+    component: _RegisterScreen.default,
+    options: {
+      title: 'Đăng ký',
+      headerShown: false
+    }
+  }), _react.default.createElement(Stack.Screen, {
+    name: "ForgotPasswordScreen",
+    component: _ForgotPasswordScreen.default,
+    options: {
+      title: 'Quên Mật Khẩu',
+      headerShown: false
+    }
+  }));
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbIlN0YWNrIiwiaW5kZXgiLCJTaWduSW5TY3JlZW4iLCJ0aXRsZSIsImhlYWRlclNob3duIiwiUmVnaXN0ZXJTY3JlZW4iLCJGb3Jnb3RQYXNzd29yZFNjcmVlbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUFBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOztBQUVBOztBQUNBLElBQU1BLEtBQUssR0FBRyxrQ0FBZDs7QUFFZSxTQUFTQyxLQUFULEdBQWlCO0FBQzlCLFNBQ0UsNkJBQUMsS0FBRCxDQUFPLFNBQVAsUUFDRSw2QkFBQyxLQUFELENBQU8sTUFBUDtBQUNFLElBQUEsSUFBSSxFQUFDLGNBRFA7QUFFRSxJQUFBLFNBQVMsRUFBRUMscUJBRmI7QUFHRSxJQUFBLE9BQU8sRUFBRTtBQUFDQyxNQUFBQSxLQUFLLEVBQUUsV0FBUjtBQUFxQkMsTUFBQUEsV0FBVyxFQUFFO0FBQWxDO0FBSFgsSUFERixFQU1FLDZCQUFDLEtBQUQsQ0FBTyxNQUFQO0FBQ0UsSUFBQSxJQUFJLEVBQUMsZ0JBRFA7QUFFRSxJQUFBLFNBQVMsRUFBRUMsdUJBRmI7QUFHRSxJQUFBLE9BQU8sRUFBRTtBQUFDRixNQUFBQSxLQUFLLEVBQUUsU0FBUjtBQUFtQkMsTUFBQUEsV0FBVyxFQUFFO0FBQWhDO0FBSFgsSUFORixFQVdFLDZCQUFDLEtBQUQsQ0FBTyxNQUFQO0FBQ0UsSUFBQSxJQUFJLEVBQUMsc0JBRFA7QUFFRSxJQUFBLFNBQVMsRUFBRUUsNkJBRmI7QUFHRSxJQUFBLE9BQU8sRUFBRTtBQUFDSCxNQUFBQSxLQUFLLEVBQUUsZUFBUjtBQUF5QkMsTUFBQUEsV0FBVyxFQUFFO0FBQXRDO0FBSFgsSUFYRixDQURGO0FBbUJEIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcclxuaW1wb3J0IHtWaWV3LCBUZXh0fSBmcm9tICdyZWFjdC1uYXRpdmUnO1xyXG5pbXBvcnQgU2lnbkluU2NyZWVuIGZyb20gJy4vU2lnbkluU2NyZWVuJztcclxuaW1wb3J0IFJlZ2lzdGVyU2NyZWVuIGZyb20gJy4vUmVnaXN0ZXJTY3JlZW4nO1xyXG5pbXBvcnQgRm9yZ290UGFzc3dvcmRTY3JlZW4gZnJvbSAnLi9Gb3Jnb3RQYXNzd29yZFNjcmVlbic7XHJcblxyXG5pbXBvcnQge2NyZWF0ZVN0YWNrTmF2aWdhdG9yfSBmcm9tICdAcmVhY3QtbmF2aWdhdGlvbi9zdGFjayc7XHJcbmNvbnN0IFN0YWNrID0gY3JlYXRlU3RhY2tOYXZpZ2F0b3IoKTtcclxuXHJcbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIGluZGV4KCkge1xyXG4gIHJldHVybiAoXHJcbiAgICA8U3RhY2suTmF2aWdhdG9yPlxyXG4gICAgICA8U3RhY2suU2NyZWVuXHJcbiAgICAgICAgbmFtZT1cIlNpZ25JblNjcmVlblwiXHJcbiAgICAgICAgY29tcG9uZW50PXtTaWduSW5TY3JlZW59XHJcbiAgICAgICAgb3B0aW9ucz17e3RpdGxlOiAnxJDEg25nIG5o4bqtcCcsIGhlYWRlclNob3duOiBmYWxzZX19XHJcbiAgICAgIC8+XHJcbiAgICAgIDxTdGFjay5TY3JlZW5cclxuICAgICAgICBuYW1lPVwiUmVnaXN0ZXJTY3JlZW5cIlxyXG4gICAgICAgIGNvbXBvbmVudD17UmVnaXN0ZXJTY3JlZW59XHJcbiAgICAgICAgb3B0aW9ucz17e3RpdGxlOiAnxJDEg25nIGvDvScsIGhlYWRlclNob3duOiBmYWxzZX19XHJcbiAgICAgIC8+XHJcbiAgICAgIDxTdGFjay5TY3JlZW5cclxuICAgICAgICBuYW1lPVwiRm9yZ290UGFzc3dvcmRTY3JlZW5cIlxyXG4gICAgICAgIGNvbXBvbmVudD17Rm9yZ290UGFzc3dvcmRTY3JlZW59XHJcbiAgICAgICAgb3B0aW9ucz17e3RpdGxlOiAnUXXDqm4gTeG6rXQgS2jhuql1JywgaGVhZGVyU2hvd246IGZhbHNlfX1cclxuICAgICAgLz5cclxuICAgIDwvU3RhY2suTmF2aWdhdG9yPlxyXG4gICk7XHJcbn1cclxuIl19
