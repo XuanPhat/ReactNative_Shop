@@ -165,12 +165,10 @@ function* updateProfile(action) {
     console.log(error);
   }
 }
-function* sagas() {
+export default function* sagas() {
   yield takeLatest(ActionTypes.AUTH_SIGNIN, signIn);
   yield takeLatest(ActionTypes.AUTH_REGISTER, register);
   yield takeLatest(ActionTypes.AUTH_SIGNOUT, signOut);
   yield takeLatest(ActionTypes.AUTH_ADD_ADDRESS, addAddress);
   yield takeLatest(ActionTypes.AUTH_UPDATE_PROFILE, updateProfile);
 }
-
-export default sagas;
