@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-
+const addNumber = (x, y) => {
+  return x + y;
+};
 class Intro extends Component {
   render() {
     return (

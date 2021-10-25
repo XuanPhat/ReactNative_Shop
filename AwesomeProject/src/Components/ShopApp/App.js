@@ -4,15 +4,11 @@ import {Formik} from 'formik';
 import * as Yup from 'yup';
 
 const Schema = Yup.object().shape({
-  username: Yup.string()
-    .email('Gmail không đúng định dạng')
-    .required('Địa chỉ gmail không được để trống'),
-  password: Yup.string()
-    .min(6, 'mật khẩu phải lớn hơn 6 kí tự')
-    .required('Mật khẩu không được để trống'),
+  username: Yup.string().required('This field is required'),
+  password: Yup.string().required('This field is required'),
 });
 
-export default function SignIn() {
+export default function App() {
   return (
     <View>
       <Formik
